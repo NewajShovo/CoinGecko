@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0463890224B57A3002DE562 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A046388F224B57A3002DE562 /* AppDelegate.m */; };
+		A0463893224B57A3002DE562 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0463892224B57A3002DE562 /* ViewController.m */; };
+		A0463896224B57A3002DE562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0463894224B57A3002DE562 /* Main.storyboard */; };
+		A0463898224B57A3002DE562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0463897224B57A3002DE562 /* Assets.xcassets */; };
+		A046389B224B57A3002DE562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0463899224B57A3002DE562 /* LaunchScreen.storyboard */; };
+		A046389E224B57A3002DE562 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A046389D224B57A3002DE562 /* main.m */; };
+		A04638A8224B57A3002DE562 /* CoinGeckoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A04638A7224B57A3002DE562 /* CoinGeckoTests.m */; };
+		A04638B3224B57A3002DE562 /* CoinGeckoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A04638B2224B57A3002DE562 /* CoinGeckoUITests.m */; };
+		A04638C6224B57F7002DE562 /* coinGeckoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04638C4224B57F7002DE562 /* coinGeckoViewController.m */; };
+		A04638C7224B57F7002DE562 /* coinGeckoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04638C5224B57F7002DE562 /* coinGeckoViewController.xib */; };
+		A04638CB224B74F4002DE562 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04638C9224B74F4002DE562 /* detailViewController.m */; };
+		A04638CC224B74F4002DE562 /* detailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04638CA224B74F4002DE562 /* detailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A04638A4224B57A3002DE562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0463883224B57A2002DE562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A046388A224B57A3002DE562;
+			remoteInfo = CoinGecko;
+		};
+		A04638AF224B57A3002DE562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0463883224B57A2002DE562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A046388A224B57A3002DE562;
+			remoteInfo = CoinGecko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A046388B224B57A3002DE562 /* CoinGecko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinGecko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A046388E224B57A3002DE562 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A046388F224B57A3002DE562 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0463891224B57A3002DE562 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0463892224B57A3002DE562 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0463895224B57A3002DE562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0463897224B57A3002DE562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A046389A224B57A3002DE562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A046389C224B57A3002DE562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A046389D224B57A3002DE562 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A04638A3224B57A3002DE562 /* CoinGeckoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinGeckoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04638A7224B57A3002DE562 /* CoinGeckoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinGeckoTests.m; sourceTree = "<group>"; };
+		A04638A9224B57A3002DE562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04638AE224B57A3002DE562 /* CoinGeckoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinGeckoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04638B2224B57A3002DE562 /* CoinGeckoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinGeckoUITests.m; sourceTree = "<group>"; };
+		A04638B4224B57A3002DE562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04638C3224B57F7002DE562 /* coinGeckoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coinGeckoViewController.h; sourceTree = "<group>"; };
+		A04638C4224B57F7002DE562 /* coinGeckoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coinGeckoViewController.m; sourceTree = "<group>"; };
+		A04638C5224B57F7002DE562 /* coinGeckoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = coinGeckoViewController.xib; sourceTree = "<group>"; };
+		A04638C8224B74F4002DE562 /* detailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
+		A04638C9224B74F4002DE562 /* detailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
+		A04638CA224B74F4002DE562 /* detailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0463888224B57A3002DE562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04638A0224B57A3002DE562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04638AB224B57A3002DE562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0463882224B57A2002DE562 = {
+			isa = PBXGroup;
+			children = (
+				A046388D224B57A3002DE562 /* CoinGecko */,
+				A04638A6224B57A3002DE562 /* CoinGeckoTests */,
+				A04638B1224B57A3002DE562 /* CoinGeckoUITests */,
+				A046388C224B57A3002DE562 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A046388C224B57A3002DE562 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A046388B224B57A3002DE562 /* CoinGecko.app */,
+				A04638A3224B57A3002DE562 /* CoinGeckoTests.xctest */,
+				A04638AE224B57A3002DE562 /* CoinGeckoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A046388D224B57A3002DE562 /* CoinGecko */ = {
+			isa = PBXGroup;
+			children = (
+				A046388E224B57A3002DE562 /* AppDelegate.h */,
+				A046388F224B57A3002DE562 /* AppDelegate.m */,
+				A0463891224B57A3002DE562 /* ViewController.h */,
+				A0463892224B57A3002DE562 /* ViewController.m */,
+				A0463894224B57A3002DE562 /* Main.storyboard */,
+				A0463897224B57A3002DE562 /* Assets.xcassets */,
+				A0463899224B57A3002DE562 /* LaunchScreen.storyboard */,
+				A046389C224B57A3002DE562 /* Info.plist */,
+				A046389D224B57A3002DE562 /* main.m */,
+				A04638C3224B57F7002DE562 /* coinGeckoViewController.h */,
+				A04638C4224B57F7002DE562 /* coinGeckoViewController.m */,
+				A04638C5224B57F7002DE562 /* coinGeckoViewController.xib */,
+				A04638C8224B74F4002DE562 /* detailViewController.h */,
+				A04638C9224B74F4002DE562 /* detailViewController.m */,
+				A04638CA224B74F4002DE562 /* detailViewController.xib */,
+			);
+			path = CoinGecko;
+			sourceTree = "<group>";
+		};
+		A04638A6224B57A3002DE562 /* CoinGeckoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A04638A7224B57A3002DE562 /* CoinGeckoTests.m */,
+				A04638A9224B57A3002DE562 /* Info.plist */,
+			);
+			path = CoinGeckoTests;
+			sourceTree = "<group>";
+		};
+		A04638B1224B57A3002DE562 /* CoinGeckoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A04638B2224B57A3002DE562 /* CoinGeckoUITests.m */,
+				A04638B4224B57A3002DE562 /* Info.plist */,
+			);
+			path = CoinGeckoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A046388A224B57A3002DE562 /* CoinGecko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04638B7224B57A3002DE562 /* Build configuration list for PBXNativeTarget "CoinGecko" */;
+			buildPhases = (
+				A0463887224B57A3002DE562 /* Sources */,
+				A0463888224B57A3002DE562 /* Frameworks */,
+				A0463889224B57A3002DE562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinGecko;
+			productName = CoinGecko;
+			productReference = A046388B224B57A3002DE562 /* CoinGecko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A04638A2224B57A3002DE562 /* CoinGeckoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04638BA224B57A3002DE562 /* Build configuration list for PBXNativeTarget "CoinGeckoTests" */;
+			buildPhases = (
+				A046389F224B57A3002DE562 /* Sources */,
+				A04638A0224B57A3002DE562 /* Frameworks */,
+				A04638A1224B57A3002DE562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04638A5224B57A3002DE562 /* PBXTargetDependency */,
+			);
+			name = CoinGeckoTests;
+			productName = CoinGeckoTests;
+			productReference = A04638A3224B57A3002DE562 /* CoinGeckoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A04638AD224B57A3002DE562 /* CoinGeckoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04638BD224B57A3002DE562 /* Build configuration list for PBXNativeTarget "CoinGeckoUITests" */;
+			buildPhases = (
+				A04638AA224B57A3002DE562 /* Sources */,
+				A04638AB224B57A3002DE562 /* Frameworks */,
+				A04638AC224B57A3002DE562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04638B0224B57A3002DE562 /* PBXTargetDependency */,
+			);
+			name = CoinGeckoUITests;
+			productName = CoinGeckoUITests;
+			productReference = A04638AE224B57A3002DE562 /* CoinGeckoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0463883224B57A2002DE562 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Shafiq Shovo";
+				TargetAttributes = {
+					A046388A224B57A3002DE562 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A04638A2224B57A3002DE562 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A046388A224B57A3002DE562;
+					};
+					A04638AD224B57A3002DE562 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A046388A224B57A3002DE562;
+					};
+				};
+			};
+			buildConfigurationList = A0463886224B57A2002DE562 /* Build configuration list for PBXProject "CoinGecko" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0463882224B57A2002DE562;
+			productRefGroup = A046388C224B57A3002DE562 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A046388A224B57A3002DE562 /* CoinGecko */,
+				A04638A2224B57A3002DE562 /* CoinGeckoTests */,
+				A04638AD224B57A3002DE562 /* CoinGeckoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0463889224B57A3002DE562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04638CC224B74F4002DE562 /* detailViewController.xib in Resources */,
+				A046389B224B57A3002DE562 /* LaunchScreen.storyboard in Resources */,
+				A04638C7224B57F7002DE562 /* coinGeckoViewController.xib in Resources */,
+				A0463898224B57A3002DE562 /* Assets.xcassets in Resources */,
+				A0463896224B57A3002DE562 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04638A1224B57A3002DE562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04638AC224B57A3002DE562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0463887224B57A3002DE562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0463893224B57A3002DE562 /* ViewController.m in Sources */,
+				A04638C6224B57F7002DE562 /* coinGeckoViewController.m in Sources */,
+				A046389E224B57A3002DE562 /* main.m in Sources */,
+				A04638CB224B74F4002DE562 /* detailViewController.m in Sources */,
+				A0463890224B57A3002DE562 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A046389F224B57A3002DE562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04638A8224B57A3002DE562 /* CoinGeckoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04638AA224B57A3002DE562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04638B3224B57A3002DE562 /* CoinGeckoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A04638A5224B57A3002DE562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A046388A224B57A3002DE562 /* CoinGecko */;
+			targetProxy = A04638A4224B57A3002DE562 /* PBXContainerItemProxy */;
+		};
+		A04638B0224B57A3002DE562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A046388A224B57A3002DE562 /* CoinGecko */;
+			targetProxy = A04638AF224B57A3002DE562 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0463894224B57A3002DE562 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0463895224B57A3002DE562 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0463899224B57A3002DE562 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A046389A224B57A3002DE562 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A04638B5224B57A3002DE562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A04638B6224B57A3002DE562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A04638B8224B57A3002DE562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = CoinGecko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrainCraft.CoinGecko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A04638B9224B57A3002DE562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = CoinGecko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrainCraft.CoinGecko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A04638BB224B57A3002DE562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = CoinGeckoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrainCraft.CoinGeckoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinGecko.app/CoinGecko";
+			};
+			name = Debug;
+		};
+		A04638BC224B57A3002DE562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = CoinGeckoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrainCraft.CoinGeckoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinGecko.app/CoinGecko";
+			};
+			name = Release;
+		};
+		A04638BE224B57A3002DE562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = CoinGeckoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrainCraft.CoinGeckoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinGecko;
+			};
+			name = Debug;
+		};
+		A04638BF224B57A3002DE562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = CoinGeckoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BrainCraft.CoinGeckoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinGecko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0463886224B57A2002DE562 /* Build configuration list for PBXProject "CoinGecko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04638B5224B57A3002DE562 /* Debug */,
+				A04638B6224B57A3002DE562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04638B7224B57A3002DE562 /* Build configuration list for PBXNativeTarget "CoinGecko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04638B8224B57A3002DE562 /* Debug */,
+				A04638B9224B57A3002DE562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04638BA224B57A3002DE562 /* Build configuration list for PBXNativeTarget "CoinGeckoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04638BB224B57A3002DE562 /* Debug */,
+				A04638BC224B57A3002DE562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04638BD224B57A3002DE562 /* Build configuration list for PBXNativeTarget "CoinGeckoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04638BE224B57A3002DE562 /* Debug */,
+				A04638BF224B57A3002DE562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0463883224B57A2002DE562 /* Project object */;
+}
