@@ -12,29 +12,35 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface detailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+//@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
    @property (strong,readwrite) NSDictionary *value;
    @property (strong,readwrite) NSString *identity;
+@property (strong, nonatomic) IBOutlet UIScrollView *ascrollView;
+@property (strong, nonatomic) IBOutlet UILabel *rightLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *rightLable2;
+@property (strong, nonatomic) IBOutlet UILabel *leftLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *leftLabel2;
+@property (strong, nonatomic) IBOutlet UIWebView *awebview;
 
-@property (weak, nonatomic) IBOutlet UIWebView *aWebView;
-@property (strong, nonatomic) IBOutlet UIImageView *aimageView;
-
-@property (weak, nonatomic) IBOutlet UILabel *leftLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *leftLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *leftLabel3;
-@property (weak, nonatomic) IBOutlet UILabel *leftLabel4;
-@property (weak, nonatomic) IBOutlet UILabel *leftLabel5;
-@property (weak, nonatomic) IBOutlet UILabel *leftLabel6;
-///@property (strong, nonatomic) IBOutlet UIWebView *indicator;
-
-
-@property (weak, nonatomic) IBOutlet UILabel *rightLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *rightLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *rightLable3;
-@property (weak, nonatomic) IBOutlet UILabel *rightLabel4;
-@property (weak, nonatomic) IBOutlet UILabel *rightLable5;
-@property (weak, nonatomic) IBOutlet UILabel *rightLable6;
+//@property (weak, nonatomic) IBOutlet UIWebView *aWebView;
+//@property (strong, nonatomic) IBOutlet UIImageView *aimageView;
+//
+//@property (weak, nonatomic) IBOutlet UILabel *leftLabel1;
+//@property (weak, nonatomic) IBOutlet UILabel *leftLabel2;
+//@property (weak, nonatomic) IBOutlet UILabel *leftLabel3;
+//@property (weak, nonatomic) IBOutlet UILabel *leftLabel4;
+//@property (weak, nonatomic) IBOutlet UILabel *leftLabel5;
+//@property (weak, nonatomic) IBOutlet UILabel *leftLabel6;
+/////@property (strong, nonatomic) IBOutlet UIWebView *indicator;
+//
+//
+//@property (weak, nonatomic) IBOutlet UILabel *rightLabel1;
+//@property (weak, nonatomic) IBOutlet UILabel *rightLabel2;
+//@property (weak, nonatomic) IBOutlet UILabel *rightLable3;
+//@property (weak, nonatomic) IBOutlet UILabel *rightLabel4;
+//@property (weak, nonatomic) IBOutlet UILabel *rightLable5;
+//@property (weak, nonatomic) IBOutlet UILabel *rightLable6;
 
 
 

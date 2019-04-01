@@ -12,21 +12,28 @@
 @end
 
 @implementation detailViewController
-
+@synthesize ascrollView;
 - (void)viewDidLoad {
 
     [super viewDidLoad];
+    [ascrollView setScrollEnabled:YES];
+    [ascrollView setContentSize:CGSizeMake(375,650)];
   //  NSLog(@"%@",_value);
     //NSLog(@"aaaaaaaa %@",_identity);
         dispatch_async(dispatch_get_main_queue(), ^{
+            
+            
+            
             self->_rightLabel1.text = self->_value[@"name"];
+            NSLog(@"%@",_value[@"name"]);
   
     
             NSString *temp= [[self->_value valueForKey:@"market_cap_rank"]description];
-            self->_rightLabel2.text = temp;
+            self->_rightLable2.text = temp;
     
             temp= [ [self->_value valueForKey:@"total_supply"]description ];
 
+          /*
             self->_rightLable3.text = temp;
 
             temp= [ [self->_value valueForKey:@"current_price"]description ];
@@ -41,13 +48,14 @@
     
             temp= [ [self->_value valueForKey:@"last_updated"]description ];
             //self->_rightLable6.text = temp;
+           */
    
             NSString *str = self->_value[@"image"];
     
     
    // NSData * data = [[NSData alloc] initWithContentsOfURL:str];
     //_aimageView.image= [UIImage imageWithData: data];
-            [self.indicator startAnimating];
+           // [self.indicator startAnimating];
             NSLog(@"%@",_identity);
             NSString *str1 = @"https://api.coingecko.com/api/v3/coins/";
             str1= [str1 stringByAppendingString:_identity];
@@ -72,12 +80,17 @@
                NSLog(@"%@",dict);
                dispatch_async(dispatch_get_main_queue(), ^{
                    
-              [self.indicator stopAnimating];
-              [self.aWebView loadHTMLString:val baseURL:nil];
-              [self.indicator removeFromSuperview];
+             // [self.indicator stopAnimating];
+            
+                   
+              [self.awebview loadHTMLString:val baseURL:nil];
+             // [self.indicator removeFromSuperview];
                });
+             
+            
             
              }] resume ];
+            
         });
     
     
