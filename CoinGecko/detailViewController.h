@@ -16,8 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
    @property (strong,readwrite) NSDictionary *value;
    @property (strong,readwrite) NSString *identity;
-//@property (weak, nonatomic) IBOutlet UIImageView *aimageView;
+
 @property (weak, nonatomic) IBOutlet UIWebView *aWebView;
+@property (strong, nonatomic) IBOutlet UIImageView *aimageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *leftLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *leftLabel2;

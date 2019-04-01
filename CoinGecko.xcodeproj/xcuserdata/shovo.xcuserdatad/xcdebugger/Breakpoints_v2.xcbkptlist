@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/coinGeckoViewController.m"
-            timestampString = "575720883.2785881"
+            timestampString = "575794813.3570991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "-init"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/coinGeckoViewController.m"
-            timestampString = "575720883.2787009"
+            timestampString = "575794813.3576109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-fetchDataUsingJson"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/coinGeckoViewController.m"
-            timestampString = "575720883.278798"
+            timestampString = "575794813.357891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-fetchDataUsingJson"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,27 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/coinGeckoViewController.m"
-            timestampString = "575720883.278891"
+            timestampString = "575794813.358164"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-fetchDataUsingJson"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoinGecko/coinGeckoViewController.m"
-            timestampString = "575720883.278978"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "-fetchDataUsingJson"
             landmarkType = "7">
             <Locations>
@@ -137,11 +121,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/coinGeckoViewController.m"
-            timestampString = "575720883.279063"
+            timestampString = "575794813.358426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "-prepareForReuse"
             landmarkType = "7">
          </BreakpointContent>
@@ -153,11 +137,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/coinGeckoViewController.m"
-            timestampString = "575720883.279133"
+            timestampString = "575794813.358739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "-fetchDataUsingJson"
             landmarkType = "7">
          </BreakpointContent>
@@ -169,7 +153,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/detailViewController.m"
-            timestampString = "575720883.279195"
+            timestampString = "575794813.359147"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -185,7 +169,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinGecko/detailViewController.m"
-            timestampString = "575720883.279241"
+            timestampString = "575794813.359221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"

@@ -136,7 +136,6 @@
                 <constraint firstItem="cC8-4A-XR2" firstAttribute="leading" secondItem="Uff-Sq-JWC" secondAttribute="trailing" constant="34" id="Jlt-TL-r5a"/>
                 <constraint firstItem="msU-TR-z2V" firstAttribute="height" secondItem="xh2-Vm-CuY" secondAttribute="height" id="M4M-Ko-chU"/>
                 <constraint firstItem="cC8-4A-XR2" firstAttribute="height" secondItem="Uff-Sq-JWC" secondAttribute="height" id="Mao-sN-rSK"/>
-                <constraint firstItem="msU-TR-z2V" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="72" id="N4V-lU-TM5"/>
                 <constraint firstItem="oad-mn-S9K" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="34" id="Ng0-uG-RDM"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6HQ-7z-RQK" secondAttribute="trailing" constant="5" id="Ofl-01-ubb"/>
                 <constraint firstItem="kwp-Vk-fhx" firstAttribute="top" secondItem="xh2-Vm-CuY" secondAttribute="bottom" constant="23" id="QLw-qO-Tuu"/>
@@ -157,12 +156,13 @@
                 <constraint firstItem="cC8-4A-XR2" firstAttribute="top" secondItem="sBS-m3-ajy" secondAttribute="bottom" constant="25" id="fON-Aq-Xey"/>
                 <constraint firstItem="sBS-m3-ajy" firstAttribute="height" secondItem="kwp-Vk-fhx" secondAttribute="height" id="fro-KZ-yFN"/>
                 <constraint firstItem="6HQ-7z-RQK" firstAttribute="top" secondItem="6XO-kV-uIG" secondAttribute="bottom" constant="22" id="fyr-bl-Msr"/>
-                <constraint firstItem="xh2-Vm-CuY" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="72" id="h5d-ks-2HT"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="cWo-80-POL" secondAttribute="bottom" constant="35" id="jNa-Ze-OTF"/>
                 <constraint firstItem="sBS-m3-ajy" firstAttribute="top" secondItem="msU-TR-z2V" secondAttribute="bottom" constant="23" id="jcX-Or-OQc"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6XO-kV-uIG" secondAttribute="trailing" constant="5" id="nuX-Zs-yfw"/>
+                <constraint firstItem="xh2-Vm-CuY" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="72" id="o0t-Rm-lqZ"/>
                 <constraint firstItem="oad-mn-S9K" firstAttribute="height" secondItem="9fv-bX-1vV" secondAttribute="height" id="pQ6-2F-eTp"/>
                 <constraint firstItem="cWo-80-POL" firstAttribute="top" secondItem="oad-mn-S9K" secondAttribute="bottom" constant="25" id="rNO-xE-WsJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="xh2-Vm-CuY" secondAttribute="bottom" constant="554" id="sTy-vx-i43"/>
                 <constraint firstItem="Yh3-jT-hSF" firstAttribute="top" secondItem="6HQ-7z-RQK" secondAttribute="bottom" constant="23" id="si8-6I-hxP"/>
                 <constraint firstItem="9qA-qj-V9L" firstAttribute="height" secondItem="Uff-Sq-JWC" secondAttribute="height" id="v9P-Ry-A1O"/>
                 <constraint firstItem="9fv-bX-1vV" firstAttribute="height" secondItem="9qA-qj-V9L" secondAttribute="height" id="vtk-Eg-491"/>
@@ -172,6 +172,7 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6XO-kV-uIG" secondAttribute="trailing" constant="5" id="xVX-0a-yb8"/>
                 <constraint firstItem="cWo-80-POL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="xyd-HV-6kq"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="sBS-m3-ajy" secondAttribute="trailing" constant="5" id="ypS-h6-L4b"/>
+                <constraint firstItem="msU-TR-z2V" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="72" id="zsk-U6-KdL"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>

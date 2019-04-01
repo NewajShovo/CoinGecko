@@ -19,7 +19,7 @@
 @end
 
 @implementation coinGeckoViewController
-
+@synthesize refreshControl;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -31,10 +31,21 @@
     Url = [ [ NSMutableArray alloc] init];
         [self fetchDataUsingJson];
     [atableView registerClass:[CustomTableCell class] forCellReuseIdentifier:NSStringFromClass([CustomTableCell class])];
-    [self->activityIndicator setHidesWhenStopped:true];
+ [self->activityIndicator setHidesWhenStopped:true];
     [self->activityIndicator startAnimating];
-
-//    [activityIndicator removeFromSuperview];
+    
+//    UITableViewController *tableViewController = [[UITableViewController alloc] init];
+//    tableViewController.tableView = self->atableView;
+//    self.refreshControl.backgroundColor = [UIColor purpleColor];
+//    self.refreshControl.tintColor = [UIColor whiteColor];
+//    [self.refreshControl addTarget:self
+//                            action:@selector(fetchDataUsingJson)
+//                  forControlEvents:UIControlEventValueChanged];
+    refreshControl =[ [UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(fetchDataUsingJson) forControlEvents:UIControlEventValueChanged];
+    
+    [self->atableView addSubview:refreshControl];
+    
 }
 
 
@@ -55,6 +66,7 @@
    // NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
     [ [ NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
         
         NSLog(@"Code running Here");
         NSString *dummyString = [[ NSString alloc]  initWithData:data encoding:NSUTF8StringEncoding];
@@ -91,11 +103,12 @@
         }
     
        
-       
-        dispatch_async(dispatch_get_main_queue(), ^{
+       dispatch_async(dispatch_get_main_queue(), ^{
+        
            
-                [self->atableView reloadData];
-            [self->activityIndicator stopAnimating];
+         [self->atableView reloadData];
+         [self->activityIndicator stopAnimating];
+         [self->refreshControl endRefreshing];
 
         });
         
@@ -104,7 +117,7 @@
     }] resume ];
     
     NSLog(@"DONEE");
-    NSLog(@"%@",parentDictionary);
+   // NSLog(@"%@",parentDictionary);
     
     
 }

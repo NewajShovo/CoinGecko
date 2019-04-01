@@ -45,8 +45,8 @@
             NSString *str = self->_value[@"image"];
     
     
-    //NSData * data = [[NSData alloc] initWithContentsOfURL:url];
-   // _aimageView.image= [UIImage imageWithData: data];
+   // NSData * data = [[NSData alloc] initWithContentsOfURL:str];
+    //_aimageView.image= [UIImage imageWithData: data];
             [self.indicator startAnimating];
             NSLog(@"%@",_identity);
             NSString *str1 = @"https://api.coingecko.com/api/v3/coins/";
