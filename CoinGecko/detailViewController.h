@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "coinGeckoViewController.h"
+#import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface detailViewController : UIViewController
-//@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+//@property (strong, nonatomic) IBOutlet UIView *View;
 
    @property (strong,readwrite) NSDictionary *value;
    @property (strong,readwrite) NSString *identity;
@@ -22,6 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) IBOutlet UILabel *leftLabel1;
 @property (strong, nonatomic) IBOutlet UILabel *leftLabel2;
 @property (strong, nonatomic) IBOutlet UIWebView *awebview;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *ViewHeight;
+@property (strong, nonatomic) IBOutlet UIView *secondView;
+@property (strong, nonatomic) IBOutlet UIImageView *Image;
+
+//@property (strong, nonatomic) IBOutlet NSLayoutConstraint *Height;
+
+//@property (strong, nonatomic) WKWebView *wkWebview;
+
 
 //@property (weak, nonatomic) IBOutlet UIWebView *aWebView;
 //@property (strong, nonatomic) IBOutlet UIImageView *aimageView;

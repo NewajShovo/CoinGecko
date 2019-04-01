@@ -16,8 +16,9 @@
 - (void)viewDidLoad {
 
     [super viewDidLoad];
-    [ascrollView setScrollEnabled:YES];
-    [ascrollView setContentSize:CGSizeMake(375,650)];
+    [ascrollView setScrollEnabled:NO];
+    self.secondView.backgroundColor=[ UIColor lightGrayColor];
+    ///[ascrollView setContentSize:CGSizeMake(375,650)];
   //  NSLog(@"%@",_value);
     //NSLog(@"aaaaaaaa %@",_identity);
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -52,10 +53,11 @@
    
             NSString *str = self->_value[@"image"];
     
-    
-   // NSData * data = [[NSData alloc] initWithContentsOfURL:str];
-    //_aimageView.image= [UIImage imageWithData: data];
-           // [self.indicator startAnimating];
+            NSLog(@"%@",str);
+            NSURL *url1 = [ NSURL URLWithString:str];
+        NSData * data = [[NSData alloc] initWithContentsOfURL:url1];
+        _Image.image= [UIImage imageWithData: data];
+        [self.indicator startAnimating];
             NSLog(@"%@",_identity);
             NSString *str1 = @"https://api.coingecko.com/api/v3/coins/";
             str1= [str1 stringByAppendingString:_identity];
@@ -80,11 +82,33 @@
                NSLog(@"%@",dict);
                dispatch_async(dispatch_get_main_queue(), ^{
                    
-             // [self.indicator stopAnimating];
-            
+
+           
                    
-              [self.awebview loadHTMLString:val baseURL:nil];
-             // [self.indicator removeFromSuperview];
+                   
+                   NSLog(@"----- %f", self.awebview.scrollView.contentSize.height);
+                   [self.awebview loadHTMLString:val baseURL:nil];
+                   [NSTimer scheduledTimerWithTimeInterval:2.0 repeats:NO block:^(NSTimer * _Nonnull timer) {
+                         [self.indicator stopAnimating];
+                       [self.indicator removeFromSuperview];
+                       
+                       CGSize mWebViewTextSize = [_awebview sizeThatFits:CGSizeMake(1.0f, 1.0f)]; // Pass about any size
+                       CGRect mWebViewFrame = _awebview.frame;
+                       mWebViewFrame.size.height = mWebViewTextSize.height;
+                       self->_awebview.frame = mWebViewFrame;
+                       NSLog(@"----- %f", self.awebview.scrollView.contentSize.height);
+                       self->_awebview.frame = CGRectMake(self.awebview.frame.origin.x, self.awebview.frame.origin.y, self.awebview.frame.size.width, self->_awebview.scrollView.contentSize.height);
+                      
+                       self.ViewHeight.constant=self->_awebview.scrollView.contentSize.height;
+                       NSLog(@"asdfasdfasdf %f", self.awebview.frame.size.height);
+                       NSLog(@"asdfasdfasdf %f", self.awebview.frame.size.width);
+                       
+                       
+                       
+                   }];
+                   
+                   
+           
                });
              
             
